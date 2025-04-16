@@ -7,8 +7,8 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-color: #111;
-  color: white;
+  background-color: #ffffff; /* White background */
+  color: #111; /* Dark text for contrast */
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
@@ -22,14 +22,14 @@ body {
 }
 
 .logo {
-  width: 60vw;   /* This makes it scale with screen size */
+  width: 40vw;   /* Responsive logo */
   height: auto;
   display: block;
   margin: 0 auto 2rem auto;
 }
 
 .tagline {
-  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem); /* Scales with screen size */
   line-height: 1.4;
   margin: 0;
 }
