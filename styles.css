@@ -22,13 +22,13 @@ body {
 }
 
 .logo {
-  width: 40vw;   /* This makes it scale with screen size */
+  width: 80vw;   /* This makes it scale with screen size */
   height: auto;
   display: block;
   margin: 0 auto 2rem auto;
 }
 
 .tagline {
-  font-size: 2rem;
+  font-size: 1rem;
   line-height: 1.4;
 }
