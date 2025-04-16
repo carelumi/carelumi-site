@@ -53,3 +53,31 @@ body {
   background-color: #a03d6e;
   opacity: 1;
 }
+
+.contact-section {
+  background-color: #ffffff;
+  color: #111;
+  padding: 4rem 2rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.contact-section p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.contact-details a {
+  color: #b6447b;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
