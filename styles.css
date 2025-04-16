@@ -9,7 +9,7 @@ body {
   height: 100vh;
   background-color: #ffffff; /* White background */
   color: #111; /* Dark text for contrast */
-  font-family: Arial, sans-serif;
+  font-family: Poppins, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
