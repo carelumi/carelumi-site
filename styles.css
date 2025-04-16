@@ -1,31 +1,34 @@
 /* styles.css */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
   background-color: #111;
   color: white;
   font-family: Arial, sans-serif;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .centered-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  max-width: 90%;
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
 }
 
 .logo {
-  width: 60vw; /* 60% of viewport width */
+  width: 40vw;   /* This makes it scale with screen size */
   height: auto;
+  display: block;
+  margin: 0 auto 2rem auto;
 }
 
 .tagline {
-  font-size: 1.8rem;
-  max-width: 80%;
+  font-size: 2rem;
+  line-height: 1.4;
 }
