@@ -22,7 +22,6 @@ body {
 
 .logo {
   width: 60vw; /* 60% of viewport width */
-  max-width: 600px; /* cap size so it doesn’t get too big on desktops */
   height: auto;
 }
 
