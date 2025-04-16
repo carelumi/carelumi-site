@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #111; /* dark background */
+  background-color: #111;
   color: white;
   font-family: Arial, sans-serif;
   height: 100vh;
@@ -17,15 +17,16 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  max-width: 90%;
 }
 
 .logo {
-  width: 200px;
-  max-width: 80%;
+  width: 60vw; /* 60% of viewport width */
+  max-width: 600px; /* cap size so it doesn’t get too big on desktops */
   height: auto;
 }
 
 .tagline {
-  font-size: 1.5rem;
-  max-width: 90%;
+  font-size: 1.8rem;
+  max-width: 80%;
 }
