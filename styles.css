@@ -35,23 +35,21 @@ body {
 }
 
 .contact-button {
-  position: fixed;
-  bottom: 20px; /* raised up from the bottom */
-  left: 50%;
-  transform: translateX(-50%);
   background-color: #b6447b;
   color: white;
   text-decoration: none;
   font-size: 1rem;
   padding: 0.6rem 1.4rem;
-  border: 2px solid #111;
+  border: none;
   border-radius: 5px;
   transition: all 0.3s ease;
   font-family: 'Poppins', sans-serif;
+  margin-top: 2rem;
+  display: inline-block;
   opacity: 0.95;
 }
 
 .contact-button:hover {
-  background-color: #a03d6e; /* Slightly darker on hover */
+  background-color: #a03d6e;
   opacity: 1;
 }
