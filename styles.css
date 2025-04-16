@@ -36,7 +36,7 @@ body {
 
 .contact-button {
   position: fixed;
-  bottom: 50px; /* raised up from the bottom */
+  bottom: 20px; /* raised up from the bottom */
   left: 50%;
   transform: translateX(-50%);
   background-color: #b6447b;
@@ -47,11 +47,11 @@ body {
   border: 2px solid #111;
   border-radius: 5px;
   transition: all 0.3s ease;
-  opacity: 0.9;
+  font-family: 'Poppins', sans-serif;
+  opacity: 0.95;
 }
 
 .contact-button:hover {
-  background-color: white;
-  color: #111;
+  background-color: #a03d6e; /* Slightly darker on hover */
   opacity: 1;
 }
