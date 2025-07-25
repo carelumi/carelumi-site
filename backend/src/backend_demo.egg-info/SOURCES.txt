@@ -1,5 +1,10 @@
+.env
+MANIFEST.in
 README.md
 pyproject.toml
+setup.py
+data/1d6f2aff-a37a-4d03-a276-70e18a5fefc2.pdf
+data/67104882-991f-4b02-9fd2-620abb66fc79.pdf
 src/database.py
 src/database_operations.py
 src/main.py
@@ -7,5 +12,9 @@ src/schema.py
 src/backend_demo.egg-info/PKG-INFO
 src/backend_demo.egg-info/SOURCES.txt
 src/backend_demo.egg-info/dependency_links.txt
+src/backend_demo.egg-info/entry_points.txt
+src/backend_demo.egg-info/not-zip-safe
 src/backend_demo.egg-info/requires.txt
 src/backend_demo.egg-info/top_level.txt
+src/commands/__init__.py
+src/commands/command.py

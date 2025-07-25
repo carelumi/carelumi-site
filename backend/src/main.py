@@ -34,6 +34,8 @@ schema.Base.metadata.create_all(bind=database.engine)
 active_tokens = {}
 TOKEN_BITS = 32
 
+
+
 def get_document_text(path: str) -> str:
     url = 'https://api.va.landing.ai/v1/tools/agentic-document-analysis'
     files = {'pdf': open(path, 'rb')}
