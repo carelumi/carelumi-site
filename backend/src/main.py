@@ -13,6 +13,7 @@ from dotenv import load_dotenv
 import requests
 from syncS3 import upload_to_s3, write_s3_json, read_s3_json,update_by_user
 from llm_placeholder import get_llm_response
+from triggerEC2 import notify_data_extraction
 
 os.makedirs("data", exist_ok=True)
 SYSTEM_PROMPT = """
@@ -28,6 +29,7 @@ load_dotenv()
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 LANDING_AI_API_KEY = os.getenv("VISION_AGENT_API_KEY")
+ec2_url = "http://54.234.159.7:8000/extract"
 
 schema.Base.metadata.create_all(bind=database.engine)
 
@@ -281,7 +283,9 @@ async def upload_document(
     session.commit()
     #upload the extracted text to S3
 
-    llm_response = get_llm_response(document_text)
+    notify_data_extraction(ec2_url, user.organization_id, user.id, document.id)
+
+    
     return JSONResponse(status_code=201, content={"message": "Document uploaded successfully", "llm_response": llm_response.json()})
 
 @app.get("/organization/document/all")
