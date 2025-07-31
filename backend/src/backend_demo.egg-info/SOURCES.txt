@@ -12,7 +12,6 @@ src/schema.py
 src/backend_demo.egg-info/PKG-INFO
 src/backend_demo.egg-info/SOURCES.txt
 src/backend_demo.egg-info/dependency_links.txt
-src/backend_demo.egg-info/entry_points.txt
 src/backend_demo.egg-info/not-zip-safe
 src/backend_demo.egg-info/requires.txt
 src/backend_demo.egg-info/top_level.txt
